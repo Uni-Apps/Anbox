@@ -1,0 +1,6 @@
+# https://stackoverflow.com/questions/15014519/apk-installation-failed-install-failed-verification-failure
+adb shell settings put global verifier_verify_adb_installs 0
+
+appget('Chrome')
+
+adb install Chrome.apk
