@@ -1,0 +1,10 @@
+# https://github.com/anbox/anbox/issues/478
+
+Fix(){
+systemctl start anbox-container-manager.service
+systemctl enable anbox-container-manager.service
+}
+
+test(){
+anbox container-manager
+}
